@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>8 Puzzle BFS | Dipesh Rai</title>
+
+    <style>
+        * {
+            font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background: #16C;
+            padding: 20px;
+            font-size: 30px;
+            color: #FFF;
+        }
+
+        #output {
+            width: 90%;
+            margin: 30px auto;
+        }
+
+        .node {
+            display: inline-grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2px;
+            border: 2px solid #E1E1E1;
+            color: white;
+            margin: 20px 20px;
+            position: relative;
+        }
+
+        .node>.node_item {
+            padding: 10px;
+            background: rgb(48, 69, 94);
+        }
+
+        .right_arrow {
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            position: absolute;
+            left: 110%;
+            top: 30%;
+            color: #555;
+        }
+
+        .node:first-child>.node_item {
+            background: rgb(26, 46, 158);
+        }
+
+        .node:last-child>.node_item {
+            background: rgb(33, 112, 40);
+        }
+
+        .node:last-child>.right_arrow {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">8 PUZZLE SOLUTION USING BFS</div>
+
+        <div id="output">
+        </div>
+    </div>
+
+    <script src="./app.js" charset="utf-8"></script>
+</body>
+
+</html>
